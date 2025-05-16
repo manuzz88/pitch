@@ -1,0 +1,151 @@
+/* Ottimizzazioni per la navbar su dispositivi mobili */
+
+/* Hamburger menu */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    width: 30px;
+    height: 24px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 2000;
+    flex-direction: column;
+    justify-content: space-between;
+    background: transparent;
+    border: none;
+}
+
+.hamburger span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: var(--primary-color);
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+/* Regole specifiche per mobile */
+@media (max-width: 768px) {
+    /* Mostra hamburger su mobile */
+    .hamburger {
+        display: flex;
+    }
+    
+    /* Stili per la navbar mobile */
+    nav {
+        padding: 15px 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: white;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    /* Stili per i link di navigazione su mobile */
+    .nav-links {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 80%;
+        height: 100vh;
+        background-color: white;
+        flex-direction: column;
+        padding: 80px 20px 20px;
+        box-shadow: 5px 0 15px rgba(0,0,0,0.1);
+        transition: left 0.3s ease;
+        z-index: 1000;
+        overflow-y: auto;
+    }
+    
+    .nav-links.active {
+        display: flex;
+        left: 0;
+    }
+    
+    .nav-links li {
+        margin: 5px 0;
+        width: 100%;
+    }
+    
+    .nav-links > li > a {
+        padding: 12px 15px;
+        border-radius: 4px;
+        display: block;
+        width: 100%;
+        font-size: 16px;
+    }
+    
+    /* Stili per dropdown su mobile */
+    .dropdown-content {
+        position: static;
+        display: none;
+        box-shadow: none;
+        width: 100%;
+        padding-left: 15px;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        background-color: #f9f9f9;
+        border-radius: 4px;
+    }
+    
+    .dropdown.active .dropdown-content {
+        display: block;
+    }
+    
+    /* Indicatore per dropdown */
+    .dropbtn::after {
+        content: "▼";
+        margin-left: 5px;
+        font-size: 10px;
+        transition: transform 0.3s;
+    }
+    
+    .dropdown.active .dropbtn::after {
+        transform: rotate(180deg);
+    }
+    
+    /* Overlay scuro quando il menu è aperto */
+    .nav-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+        z-index: 999;
+    }
+    
+    .nav-overlay.active {
+        display: block;
+    }
+}
+
+/* Fix per dispositivi molto piccoli */
+@media (max-width: 375px) {
+    .nav-links {
+        width: 85%;
+    }
+    
+    .hamburger {
+        right: 15px;
+        top: 15px;
+    }
+}

@@ -1,0 +1,140 @@
+/* Ottimizzazioni specifiche per le sezioni problematiche su mobile */
+
+/* Fix per la sezione "I nostri valori" */
+@media (max-width: 768px) {
+    /* Missione e valori */
+    .mission-section .container,
+    .values-section .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    
+    .mission-point {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    
+    .mission-icon {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    .mission-text {
+        width: 100%;
+    }
+    
+    .mission-text h4 {
+        font-size: 1.1rem;
+    }
+    
+    .mission-text p {
+        font-size: 0.9rem;
+    }
+    
+    .values-grid {
+        display: block;
+        width: 100%;
+    }
+    
+    .value-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+    /* Fix per la sezione "Cosa ci differenzia" */
+    #differenze {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+        padding: 0;
+    }
+    
+    #differenze .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 5px;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+    
+    .confronto-intro {
+        width: 100%;
+        text-align: center;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    
+    .comparison-table-container {
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        position: relative;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .differenze-table {
+        width: 100%;
+        min-width: 600px; /* Assicura che la tabella non si comprima troppo */
+        font-size: 0.85rem;
+        border-collapse: collapse;
+        table-layout: fixed;
+    }
+    
+    .differenze-table th,
+    .differenze-table td {
+        padding: 6px 4px;
+        word-break: break-word;
+    }
+    
+    .differenze-table th:first-child,
+    .differenze-table td:first-child {
+        width: 30%;
+    }
+    
+    .differenze-table th:not(:first-child),
+    .differenze-table td:not(:first-child) {
+        width: 35%;
+    }
+    
+    /* Indicatore di scroll orizzontale */
+    .comparison-table-container::after {
+        content: "→ scorri →";
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        background-color: rgba(0,0,0,0.7);
+        color: white;
+        padding: 5px 10px;
+        border-radius: 4px;
+        font-size: 12px;
+        pointer-events: none;
+        animation: pulse 2s infinite;
+    }
+    
+    @keyframes pulse {
+        0% { opacity: 0.7; }
+        50% { opacity: 1; }
+        100% { opacity: 0.7; }
+    }
+}
+
+/* Fix per telefoni molto piccoli */
+@media (max-width: 375px) {
+    .mission-text h4 {
+        font-size: 1rem;
+    }
+    
+    .mission-text p {
+        font-size: 0.85rem;
+    }
+    
+    .differenze-table {
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,164 @@
+/* Ottimizzazioni specifiche per componenti su mobile */
+
+/* Regole per adattamento completo allo schermo - solo mobile */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        box-sizing: border-box;
+    }
+    
+    section {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+    
+    /* Forza larghezza massima per tutti gli elementi */
+    .section-content,
+    .card,
+    .team-section,
+    .mission-section,
+    .values-section,
+    .opportunity-section,
+    .product-section,
+    .pricing-section,
+    .traction-section,
+    .investment-section,
+    .footer-content {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+/* Stili per le tabelle scrollabili */
+.table-scroll-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* Per uno scrolling fluido su iOS */
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.table-scroll-wrapper.scrollable::after {
+    content: "→";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--primary-color);
+    font-size: 20px;
+    animation: pulse 2s infinite;
+    pointer-events: none;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+}
+
+/* Stili per immagini zoomabili */
+.zoomable-image {
+    transition: transform 0.3s ease;
+    cursor: zoom-in;
+}
+
+.zoomable-image.zoomed {
+    transform: scale(1.5);
+    cursor: zoom-out;
+    z-index: 100;
+}
+
+/* Feedback tattile per pulsanti */
+.touch-active {
+    transform: scale(0.98);
+    opacity: 0.9;
+}
+
+/* Ottimizzazioni per le card */
+@media (max-width: 768px) {
+    /* Card in colonna singola */
+    .card-container {
+        flex-direction: column;
+    }
+    
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+    /* Adattamento grafici */
+    .chart-container {
+        height: auto !important;
+        min-height: 250px;
+    }
+    
+    /* Adattamento sezioni con immagini */
+    .section-with-image {
+        flex-direction: column;
+    }
+    
+    .section-image,
+    .section-content {
+        width: 100%;
+    }
+    
+    /* Miglioramenti per il team */
+    .team-member {
+        width: 100%;
+        margin: 15px 0;
+    }
+    
+    /* Miglioramenti per la timeline */
+    .timeline-item {
+        padding-left: 30px;
+    }
+    
+    .timeline-item::before {
+        left: 0;
+    }
+    
+    /* Miglioramenti per i prezzi */
+    .pricing-table td,
+    .pricing-table th {
+        padding: 8px 5px;
+        font-size: 14px;
+    }
+    
+    /* Miglioramenti per i confronti */
+    .comparison-table td,
+    .comparison-table th {
+        padding: 8px 5px;
+        font-size: 14px;
+    }
+    
+    /* Miglioramenti per gli unit economics */
+    .unit-economics-table td,
+    .unit-economics-table th {
+        padding: 10px 8px;
+    }
+}
+
+/* Ottimizzazioni per telefoni molto piccoli */
+@media (max-width: 375px) {
+    .card {
+        padding: 12px;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .pricing-table td,
+    .pricing-table th,
+    .comparison-table td,
+    .comparison-table th {
+        padding: 6px 4px;
+        font-size: 13px;
+    }
+}
