@@ -1,0 +1,135 @@
+/* Stili per la sezione Team */
+
+.team-content {
+    margin-top: 30px;
+}
+
+.team-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.team-intro p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Stile specifico per il layout a due membri */
+.team-grid-duo {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 900px;
+}
+
+/* Stile specifico per il layout a tre membri */
+.team-grid-trio {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+}
+
+.team-member {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.member-image {
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* Stile specifico per l'immagine del fondatore */
+.founder-img {
+    object-position: center center;
+    object-fit: contain;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.team-member:hover .member-image img {
+    transform: scale(1.05);
+}
+
+.member-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.member-info h4 {
+    font-size: 22px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.member-role {
+    font-size: 16px;
+    color: #4CAF50;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.member-info p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.member-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.member-links a {
+    color: #555;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.member-links a:hover {
+    color: #4CAF50;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .team-grid-duo {
+        grid-template-columns: 1fr;
+    }
+    
+    .member-image {
+        height: 220px;
+    }
+    
+    .member-info h4 {
+        font-size: 20px;
+    }
+}

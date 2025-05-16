@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="80" viewBox="0 0 300 80">
+  <style>
+    .text { font-family: Arial, sans-serif; font-weight: bold; }
+    .ali { fill: #e43226; }
+    .express { fill: #ff6a00; }
+  </style>
+  <text x="10" y="50" class="text ali" font-size="40">Ali</text>
+  <text x="70" y="50" class="text express" font-size="40">Express</text>
+</svg>

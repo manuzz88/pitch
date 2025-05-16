@@ -1,0 +1,125 @@
+/* Stili per il badge del dominio */
+.domain-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 6px 10px;
+    margin-left: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    position: relative;
+    top: -5px;
+}
+
+/* Stili per il badge del dominio nella sezione visione */
+.domain-badge-container {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.domain-badge-vision {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #edf7ff 0%, #d6eaff 100%);
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-shadow: 0 6px 15px rgba(52, 152, 219, 0.2);
+    transition: all 0.3s ease;
+    margin: 10px auto;
+    max-width: 500px;
+}
+
+.domain-badge-vision:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(52, 152, 219, 0.3);
+    border-color: #2980b9;
+}
+
+.domain-icon {
+    font-size: 1.5rem;
+    color: #3498db;
+    margin-right: 5px;
+}
+
+.domain-text {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #2c3e50;
+    margin: 0 12px;
+}
+
+.domain-owned {
+    font-size: 0.85rem;
+    color: #27ae60;
+    font-weight: 600;
+    margin-left: 5px;
+    background-color: rgba(39, 174, 96, 0.1);
+    padding: 3px 8px;
+    border-radius: 4px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+/* Stili per il footer domain info */
+.footer-domain-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: rgba(52, 152, 219, 0.8);
+    border-radius: 8px;
+}
+
+.footer-domain-icon {
+    font-size: 1.3rem;
+    margin-right: 10px;
+    color: #3498db;
+}
+
+.footer-domain-text {
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.footer-domain-note {
+    margin-left: 10px;
+    font-size: 0.9rem;
+    color: #2ecc71;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .domain-badge {
+        margin-left: 0;
+        margin-top: 10px;
+        padding: 4px 8px;
+    }
+    
+    .logo {
+        flex-direction: column;
+    }
+    
+    .footer-domain-info {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-domain-icon {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    
+    .footer-domain-note {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+}

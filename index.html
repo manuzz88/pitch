@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShoppingTogether - Pitch Investitori</title>
+    <link rel="stylesheet" href="css/style.css?v=1.0">
+    <link rel="stylesheet" href="css/mission-values.css?v=1.0">
+    <link rel="stylesheet" href="css/opportunity.css?v=1.0">
+    <link rel="stylesheet" href="css/section-titles.css?v=1.0">
+    <link rel="stylesheet" href="css/product-cards.css?v=1.0">
+    <link rel="stylesheet" href="css/pricing-system.css?v=1.0">
+    <link rel="stylesheet" href="css/domain-badge.css?v=1.0">
+    <link rel="stylesheet" href="css/team.css?v=1.0">
+    <link rel="stylesheet" href="css/traction.css?v=1.0">
+    <link rel="stylesheet" href="css/investment.css?v=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .loading-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+        
+        .loading-spinner {
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #4CAF50;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .path-indicator {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-size: 14px;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Login Overlay -->
+    <div id="login-overlay" class="active">
+        <div class="login-container">
+            <div class="login-header">
+                <img src="images/logo.png" alt="ShoppingTogether Logo" class="login-logo">
+                <h1>Pitch Investitori</h1>
+                <p>Accesso riservato</p>
+            </div>
+            <div class="login-form">
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Inserisci la password">
+                </div>
+                <button id="login-btn" class="btn-primary">Accedi</button>
+                <p id="login-error" class="error-message"></p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Container principale per i moduli dinamici -->
+    <div id="content-container">
+        <!-- I moduli saranno caricati qui dinamicamente -->
+        <div class="loading-container">
+            <div class="loading-spinner"></div>
+            <p>Caricamento presentazione...</p>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="js/navbar.js"></script>
+    <script src="js/cache-manager.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/module-loader.js"></script>
+    <script src="js/price-simulator.js"></script>
+</body>
+</html>

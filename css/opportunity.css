@@ -1,0 +1,32 @@
+/* Stili per la sezione Opportunità */
+.text-center {
+    text-align: center !important;
+}
+
+.opportunity-section {
+    margin-top: 40px;
+    padding: 20px 0 40px;
+}
+
+.opportunity-content {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.opportunity-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.opportunity-content p:last-child {
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 20px;
+    color: #333;
+}

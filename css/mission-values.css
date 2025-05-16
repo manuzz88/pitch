@@ -1,0 +1,243 @@
+/* Stili per le sezioni Missione e Valori */
+
+/* Sezione Missione */
+.mission-section {
+    background-color: #f9f9f9;
+    padding-bottom: 60px;
+}
+
+.mission-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.mission-statement {
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.mission-statement .highlight-text {
+    font-size: 26px;
+    line-height: 1.6;
+    color: #333;
+    font-weight: 500;
+    padding: 25px 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    border-left: 5px solid #4CAF50;
+}
+
+@media (max-width: 768px) {
+    .mission-points {
+        grid-template-columns: 1fr;
+    }
+    
+    .mission-statement .highlight-text {
+        font-size: 20px;
+        padding: 20px;
+    }
+    
+    .mission-point {
+        padding: 15px;
+    }
+    
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .value-item {
+        padding: 20px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.mission-banner {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.mission-banner .section-subtitle {
+    display: inline-block;
+    font-size: 22px;
+    margin-bottom: 30px;
+    color: #444;
+    padding: 10px 25px;
+    background-color: #f0f0f0;
+    border-radius: 30px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.mission-banner .section-sub.market-stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.market-stats .section-subtitle {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.text-center {
+    text-align: center !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mission-points {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    width: 100%;
+}
+
+.mission-point {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: flex-start;
+    transition: transform 0.3s ease;
+}
+
+.mission-point:hover {
+    transform: translateY(-5px);
+}
+
+.mission-icon {
+    flex: 0 0 60px;
+    height: 60px;
+    background-color: rgba(76, 175, 80, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.mission-icon i {
+    font-size: 26px;
+    color: #4CAF50;
+}
+
+.mission-text {
+    flex: 1;
+}
+
+.mission-text h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.mission-text p {
+    color: #666;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+/* Sezione Valori */
+.values-section {
+    background-color: white;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.values-intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+.values-intro p {
+    font-size: 20px;
+    color: #666;
+    font-style: italic;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.value-item {
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: flex-start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-bottom: 3px solid #4CAF50;
+    height: 100%;
+}
+
+.value-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.value-icon {
+    flex: 0 0 70px;
+    height: 70px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.value-icon i {
+    font-size: 30px;
+    color: white;
+}
+
+.value-content {
+    flex: 1;
+}
+
+.target-segments {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.target-segments .section-subtitle {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.value-content h3 {
+    margin-bottom: 12px;
+    font-size: 20px;
+    color: #333;
+}
+
+.value-content p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 16px;
+}

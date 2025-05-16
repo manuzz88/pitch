@@ -1,0 +1,57 @@
+/* Stili per centrare i titoli delle sezioni */
+.text-center {
+    text-align: center !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Stili per la sezione Segmenti */
+.target-segments {
+    text-align: center;
+}
+
+.target-segments .section-subtitle {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: fit-content;
+}
+
+/* Stili per la sezione Dati chiave dell'e-commerce */
+.market-stats {
+    text-align: center;
+}
+
+.market-stats .section-subtitle {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: fit-content;
+}
+
+/* Stili per la sezione Opportunità */
+.opportunity-section {
+    text-align: center;
+}
+
+.opportunity-section .section-subtitle {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: fit-content;
+}
+
+/* Stile generale per tutti i sottotitoli delle sezioni */
+.section-subtitle {
+    position: relative;
+    z-index: 1;
+}
+
+/* Centratura del testo in generale */
+.section-title {
+    text-align: center;
+}

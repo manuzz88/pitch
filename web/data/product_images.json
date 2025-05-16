@@ -1,0 +1,37 @@
+{
+  "Mini Spa da Esterno a 5 Posti con Sistema Balboa": {
+    "name": "Mini Spa da Esterno a 5 Posti con Sistema Balboa",
+    "image_url": "https://res.cloudinary.com/dvs5hguyv/image/upload/v1746790685/prodotto_67/immagini/product_67_3b6307b0.jpg",
+    "local_path": "images/products/spa.jpg"
+  },
+  "Scavatore Giocattolo Elettrico": {
+    "name": "Scavatore Giocattolo Elettrico",
+    "image_url": "https://res.cloudinary.com/dvs5hguyv/image/upload/v1746514218/prodotto_58/immagini/product_58_ca60a406.jpg",
+    "local_path": "images/products/excavator.jpg"
+  },
+  "Bicicletta elettrica - UrbanBiker UB100": {
+    "name": "Bicicletta elettrica - UrbanBiker UB100",
+    "image_url": "https://res.cloudinary.com/dvs5hguyv/image/upload/v1746794568/prodotto_68/immagini/product_68_0f023396.jpg",
+    "local_path": "images/products/ebike.jpg"
+  },
+  "Smart TV Curva 75\" 4K Ultra HD": {
+    "name": "Smart TV Curva 75\" 4K Ultra HD",
+    "image_url": "https://res.cloudinary.com/dvs5hguyv/image/upload/v1746790686/prodotto_67/immagini/product_67_90c15236.jpg",
+    "local_path": "images/products/tv.jpg"
+  },
+  "Unitree G1 Humanoid agent AI avatar": {
+    "name": "Unitree G1 Humanoid agent AI avatar",
+    "image_url": "https://res.cloudinary.com/dvs5hguyv/image/upload/v1746790683/prodotto_67/immagini/product_67_c855139e.jpg",
+    "local_path": "images/products/robot.jpg"
+  },
+  "Allenatore a Volano Multifunzione": {
+    "name": "Allenatore a Volano Multifunzione",
+    "image_url": "https://res.cloudinary.com/dvs5hguyv/image/upload/v1746514222/prodotto_58/immagini/product_58_e34d05df.jpg",
+    "local_path": "images/products/fitness.jpg"
+  },
+  "Tapis Roulant Curvo Senza Motore Professionale": {
+    "name": "Tapis Roulant Curvo Senza Motore Professionale",
+    "image_url": "https://res.cloudinary.com/dvs5hguyv/image/upload/v1746794576/prodotto_68/immagini/product_68_079a415e.jpg",
+    "local_path": "images/products/tapis.jpg"
+  }
+}
